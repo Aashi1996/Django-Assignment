@@ -38,7 +38,7 @@ class Book(models.Model):
 
 
 def get_expiry():
-    return datetime.today() + timedelta(days=15)
+    return datetime.today() + timedelta(days=7)
 class IssuedBook(models.Model):
     
     enrollment=models.CharField(max_length=30)
